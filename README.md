@@ -12,7 +12,7 @@ If you have samba installed removed it or it will has conflicts and this script 
 git clone https://github.com/joseafon/samba-server-cli.git
 
 ## Setup
-sudo chmod 700 samba-server.sh
+cd samba-server-cli && sudo chmod 700 samba-server.sh
 
 ## Run
 sudo ./samba-server.sh
