@@ -1,11 +1,11 @@
 # samba-server-cli
-Install and manage samba like a standalone server
+Install and manage samba like a standalone server from command line interface
 
 ## Language
 Shell script (Bourne Shell)
 
 ## Prerequisites
-Last version of Ubuntu, Debian or derivates
+Last version of Ubuntu Server.
 If you have samba installed removed it or it will has conflicts and this script will  not work
 
 ## Installation
