@@ -62,7 +62,7 @@ echo "\e[96mChecking the network connection ...\e[0m"
         echo
 		echo "\e[96mDone\e[0m"
         echo
-        echo "\e[96mSearching system updates, please wait...\e[0m"
+        echo "\e[96mInstalling system updates, please wait...\e[0m"
 
         apt-get update -y > /dev/null 2>&1
         apt-get upgrade -y > /dev/null 2>&1
