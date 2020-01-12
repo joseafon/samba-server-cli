@@ -18,8 +18,8 @@ then
 
 echo "\e[31mYou need privileges of administrator\e[0m"
 
-fi
 	exit 1
+fi
 
 echo "\e[92m
 ███████╗ █████╗ ███╗   ███╗██████╗  █████╗           
