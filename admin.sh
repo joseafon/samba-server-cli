@@ -11,6 +11,13 @@
 
 #!/bin/sh
 
+if [ $USER != 'root' ]
+then
+
+echo "\e[31mYou need privileges of administrator\e[0m"
+
+fi
+	exit 1
 clear
 
 echo "\e[92m
