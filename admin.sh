@@ -13,6 +13,17 @@
 
 clear
 
+which apt > /dev/null 2>&1
+
+if [ $? -ne 0 ]
+then
+
+    echo  "\e[31mYour operative system is not compatible with this script\e[0m"
+
+    exit 1
+
+fi
+
 if [ $USER != 'root' ]
 then
 
