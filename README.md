@@ -5,7 +5,7 @@ Install and manage samba like a standalone server from command line interface
 Shell script (Bourne Shell)
 
 ## Prerequisites
-Last version of Ubuntu Server.
+Last version of Ubuntu, Debian or derivatives.
 If you have samba installed like a server removed it or it will has conflicts and this script will not work
 
 ## Installation
