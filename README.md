@@ -13,6 +13,7 @@ git clone https://github.com/joseafon/samba-server-cli.git
 
 ## Setup
 cd samba-server-cli && sudo chmod 700 admin.sh
+The files will be stored in the path /etc/media/samba
 
 ## Run
 sudo sh admin.sh
