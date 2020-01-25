@@ -17,7 +17,7 @@ which apt > /dev/null 2>&1 || which dpkg > /dev/null 2>&1
 
 if [ $? -ne 0 ]
 then
-    echo "\e[5m"
+    
     echo  "\e[31mYour operative system is not compatible with this script\e[0m"
 
     exit 1
@@ -26,7 +26,7 @@ fi
 
 if [ $USER != 'root' ]
 then
-    echo "\e[5m"
+    
     echo "\e[31mYou need privileges of administrator\e[0m"
 
     exit 2
@@ -60,7 +60,7 @@ echo "\e[96mChecking the network connection ...\e[0m"
 
 	if [ $? -ne 0 ]
 	then
-        echo "\e[5m"
+        
 		echo "\e[31mThe network connection failed, trying to connect to the gateway ...\e[0m"
 
 		gateway=$(ip route show | sed -n 1p | awk '{print $3}')
@@ -69,7 +69,7 @@ echo "\e[96mChecking the network connection ...\e[0m"
 
 			if [ $? -ne 0 ]
 			then
-				echo "\e[5m"
+				
 				echo "\e[31mImpossible to connect to the gateway\e[0m"
 				sleep 3
                 clear
@@ -224,7 +224,7 @@ echo
 
 			                        if [ -d /etc/media/samba/public/"$directory" ]
 			                        then
-                                    echo "\e[5m"
+                                    
 				                    echo "\e[31mThe folder $directory already exists\e[0m"
 				                    sleep 2
 
@@ -326,7 +326,7 @@ directory mode = 0777
                                 systemctl restart smbd
 		                else
 
-			                echo "\e[5m"
+			                
 				            echo "\e[31mThe $directory folder does not exist\e[0m"
 				            sleep 2
 
@@ -340,7 +340,7 @@ directory mode = 0777
                         ;;
 
                     *) clear
-                        echo "\e[5m"
+                        
                         echo "\e[31mOPTION NOT VALID\e[0m"
                         sleep 2
                         ;;
@@ -404,7 +404,7 @@ directory mode = 0777
 
 			                if [ -d /etc/media/samba/private/"$directory" ]
 			                then
-				                echo "\e[5m"
+				                
 					            echo "\e[31mThe $directory folder already exists\e[0m"
 					            sleep 2
 
@@ -534,7 +534,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
 
 			                    else
 
-				                    echo "\e[5m"
+				                    
 					                echo "\e[31mThe $directory folder does not exist\e[0m"
 					                sleep 2
 
@@ -576,7 +576,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
                                         less /etc/samba/group/$directory
 
                                 else
-                                    echo "\e[5m"
+                                    
                                     echo "\e[31mThe $directory folder has no users or does not exist\e[0m"
                                     sleep 2
                                 fi
@@ -589,7 +589,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
                                 ;;
 
                         *) clear
-                                echo "\e[5m"
+                                
                                 echo "\e[31mOPTION NOT VALID\e[0m"
                                 sleep 2
                                 ;;
@@ -739,7 +739,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
 								        sleep 2
 
 					                else
-						                echo "\e[5m"
+						                
 							            echo "\e[31mUser $user does not exist\e[0m"
 							            sleep 2
 
@@ -803,13 +803,13 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
 								                    sleep 2
                                                             systemctl restart smbd
                                                 else
-                                                    echo "\e[5m"
+                                                    
                                                     echo "\e[31mThe username is not correct\e[0m"
                                                     sleep 2
                                                 fi
 
                                              else
-                                                echo "\e[5m"
+                                                
                                                 echo "\e[31muser $user does not exist\e[0m"
                                                 sleep 2
 						                    fi
@@ -881,8 +881,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
                                             systemctl restart smbd
 
                                          else
-
-                                             echo "\e[5m"
+                                             
                                              echo "\e[31mUser does not belong this share\e[0m"
                                              sleep 2
 
@@ -892,7 +891,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
 
                                      else
 
-                                        echo "\e[5m"
+                                        
                                         echo "\e[31mPrivate folder $directory does not exist\e[0m"
                                         sleep 2
 
@@ -900,7 +899,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
 
 						        else
 
-							        echo "\e[5m"
+							        
 							        echo "\e[31mThe user $user does not exist\e[0m"
 
 							        sleep 2
@@ -917,7 +916,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
                                      ;;
 
                           *) clear
-                                echo "\e[5m"
+                                
                                 echo "\e[31mOPTION NOT VALID\e[0m"
                                 sleep 2
                                 ;;
@@ -1050,7 +1049,7 @@ write list = @$directory" >> /etc/samba/resources/$directory.conf
                     ;;
 
             *) clear
-                    echo "\e[5m"
+                    
                     echo "\e[31mOPTION NOT VALID\e[0m"
                     sleep 2
                     ;;
