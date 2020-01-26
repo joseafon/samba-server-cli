@@ -6,7 +6,7 @@ Shell script (Bourne Shell)
 
 ## Prerequisites
 Last version of Ubuntu, Debian or derivatives.
-If you have samba installed like a server removed it or it will has conflicts and this script will not work
+Do not have samba installed like a server or to delete the file: sudo rm /etc/samba/smb.conf and copy the new file: sudo cp /usr/samba/smb.conf /etc/samba
 
 ## Installation
 git clone https://github.com/joseafon/samba-server-cli.git
